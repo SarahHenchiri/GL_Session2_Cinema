@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html>
+	<body>
+
+		<script id="templateFilm" type="text/template">
+			<li>
+				<b><%=titre %></b> <br/>
+				<%=resume %> <br/>
+				<%=sortie['dayOfMonth']%>-<%=sortie['monthValue']%>-<%=sortie['year']%>
+				<ul id="salle"></ul>
+			</li>
+		</script>
+		
+		<script id="templateSalle" type="text/template">
+				<b><%=nom %></b> <br/>
+				<%=adresse %>
+		</script>
+
+		<h1>A l'affiche en ce moment</h1>
+	
+		<button id="buttonFilm">afficher les films</button>
+		<ul id="resultFilm"></ul>
+		
+		<input type="text" placeholder="NomSalle" id="nomSalle" required>
+		<button id="buttonSalle">afficher les salles</button>
+		<ul id="resultSalle"></ul>
+		
+		
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<script type="text/javascript" src="home.js"></script>
+	</body>
+</html>
